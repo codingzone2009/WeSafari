@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeSafari</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#home">WeSafari</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#booking">Booking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to WeSafari</h1>
+            <p>Experience the Best of Safari Adventures</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas erat, ac volutpat augue suscipit id. Sed fringilla lectus ac turpis vestibulum, nec convallis justo tristique.</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="container text-center py-5">
+        <h2>About Us</h2>
+        <p>WeSafari offers unparalleled safari experiences in the most exotic locations around the world. Join us for an adventure of a lifetime!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec sapien nec turpis tincidunt efficitur. Quisque pharetra, erat id malesuada tempus, eros magna dictum augue, nec feugiat velit urna non nisi. Nam ultricies, ligula et accumsan tempus, tortor augue tincidunt risus, a aliquet metus erat non libero.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container py-5">
+        <h2 class="text-center">Gallery</h2>
+        <p class="text-center">Explore our gallery to see some of the breathtaking views and memorable moments from our safaris. Immerse yourself in the wild beauty of our destinations.</p>
+        <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#galleryCarousel" data-slide-to="1"></li>
+                <li data-target="#galleryCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/elephant.jpg" class="d-block w-100" alt="Photo 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/lion1.jpg" class="d-block w-100" alt="Photo 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/giraffe.jpg" class="d-block w-100" alt="Photo 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/rhino.jpg" class="d-block w-100" alt="Photo 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/leopard1.jpg" class="d-block w-100" alt="Photo 5">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+<section id="booking" class="container text-center py-5">
+    <h2>Booking</h2>
+    <div class="booking-content">
+        <div class="booking-description">
+            <p>Fill out the form below to book your safari adventure. Our team will get back to you with the details and availability.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Fusce viverra ex ut sem posuere, id faucibus eros auctor. Integer tristique nisl nec velit facilisis cursus.</p>
+        </div>
+        <div class="booking-form">
+            <form id="bookingForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="date" placeholder="Preferred Date" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div id="formResponse" class="mt-3"></div>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Contact Us Section -->
+<section id="contact">
+    <div class="contact-content">
+        <div class="contact-description">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any inquiries or support. We're here to help with all your safari needs.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Fusce viverra ex ut sem posuere, id faucibus eros auctor. Integer tristique nisl nec velit facilisis cursus.</p>
+        </div>
+        <div class="contact-info">
+            <address>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Safari Lane, Adventure City</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> info@wesafari.com</p>
+            </address>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 2024 WeSafari. All Rights Reserved.</p>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Adding a smooth transition during navigation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+     // Select all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                // Smooth scroll to the target section
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    });
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

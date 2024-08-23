@@ -1,0 +1,259 @@
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Background Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    color: #070707;
+    padding-top: 56px; /* Add padding to the top of the body to prevent content from hiding under the navbar */
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-dark.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700;
+}
+
+.navbar-nav .nav-link:focus {
+    outline: 2px solid #ffd700;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Gallery Section Styles */
+#gallery {
+    padding: 60px 0;
+    text-align: center; /* Center the text in the gallery section */
+}
+
+#gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #070707; /* Adjust color if needed */
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.btn-primary:focus {
+    outline: 2px solid #0056b3;
+}
+
+/* Style for section headings */
+h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #070707; /* Adjust color if needed */
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 50px;
+    height: 4px;
+    background-color: #007bff;
+    border-radius: 2px;
+    transform: translateX(-50%);
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Form Response Alerts */
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Contact Us Section Background and Layout */
+#contact {
+    position: relative;
+    background: url('img/contact-background.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 60px 15px;
+    text-align: center; /* Center text alignment */
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.contact-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-description,
+.contact-info {
+    max-width: 600px; /* Increased max-width for better readability */
+    width: 100%; /* Full width for mobile */
+    margin-left: 100px;
+}
+
+/* Custom CSS for Booking Section */
+#booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 15px; /* Added padding to the booking section */
+}
+
+.booking-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.booking-description,
+.booking-form {
+    flex: 1;
+    margin: 10px;
+    max-width: 500px;
+}
+
+.booking-description {
+    max-width: 500px;
+    padding: 10px 30px;
+}
+
+.booking-form {
+    max-width: 500px;
+    padding: 10px 30px;
+}
+
+@media (min-width: 768px) {
+    .contact-content {
+        flex-direction: row;
+    }
+
+    .booking-content {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) {
+    .booking-description,
+    .booking-form {
+        max-width: 100%;
+    }
+}
